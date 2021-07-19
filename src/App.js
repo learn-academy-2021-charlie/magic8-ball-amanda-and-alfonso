@@ -6,7 +6,7 @@ class App extends Component {
     super(props)
     this.state = {
       // ACTION ITEM: Add possible Magic8 Ball answers to the array
-      answerArray: ["Here is an answer"],
+      answerArray: ["Ask again later.","As I see it, yes.","It is certain.","Don't count on it.","Better not tell you now","Definitely, yes!"],
       selectedAnswer: ""
     }
   }
@@ -14,8 +14,12 @@ class App extends Component {
   handleSubmit = () => {
     const { answerArray } = this.state
     // ACTION ITEM: Your code here!!
+    //Math.random() to get a random number index.
+    const randomNumber = Math.floor(Math.random() * answerArray.length);
+    console.log(randomNumber)
+    //generate response based on index.
     // ACTION ITEM: Update the answerArray selection
-    this.setState({ selectedAnswer: answerArray[0] })
+    this.setState({ selectedAnswer: answerArray[randomNumber] })
   }
 
   render(){
