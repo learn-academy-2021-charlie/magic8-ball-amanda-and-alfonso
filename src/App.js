@@ -26,15 +26,21 @@ class App extends Component {
     return (
       <>
         <h1>Magic 8 Ball</h1>
+        <div class="ball">
+          <div class="window">
+            <p class="answer">{ this.state.selectedAnswer }</p>
+            </div>
+        </div>
+        <br></br>
         <input
           className="inputBox"
           type="text"
         />
         <br />
-        <button onClick={ this.handleSubmit }>
+        <button className="button" onClick={ this.handleSubmit }>
           Ask the Magic 8 Ball a Question
         </button>
-        <p>{ this.state.selectedAnswer }</p>
+        
       </>
     )
   }

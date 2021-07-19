@@ -14,3 +14,52 @@ h1 {
   padding: 5px;
   margin: 10px;
 }
+
+.button {
+  cursor: pointer;
+  background: black;
+  border-radius: 5%;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.button:hover {
+  background: blue;
+  color: #ffffff;
+  font-style: italic;
+}
+
+.ball {
+  margin: auto;
+  background: black;
+  border-radius: 50%;
+  height: 500px;
+  width: 500px;
+  color: white;
+  display: grid;
+  place-items: center;
+
+}
+
+.window {
+  background: #4E008e;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  display: grid;
+  place-items: center;
+  background: rgb(78,0,142);
+background: radial-gradient(circle, rgba(78,0,142,1) 0%, rgba(4,0,7,1) 98%, rgba(0,0,0,1) 100%);
+}
+
+.answer {
+  background: blue;
+  color: white;
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  box-shadow: 5px -5px 10px #000;
+}
